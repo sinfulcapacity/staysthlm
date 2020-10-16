@@ -48,3 +48,8 @@
 </figure>
 
 <p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
+
+
+<div class="shadow-lg">Bla</div>
+<div class="shadow-xl">BlaBla</div>
+<div class="shadow-2xl">BlaBlaBla</div>
