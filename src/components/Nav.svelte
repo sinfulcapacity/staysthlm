@@ -40,7 +40,7 @@
     <ul class="menu-list">
       <div class="icon cancel-btn" on:click={onNavHideMobileMenu}>
         <svg class="feather">
-          <use xlink:href="{featherSprite}#close" />
+          <use xlink:href="{featherSprite}#x" />
         </svg>
       </div>
       <li>

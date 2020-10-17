@@ -36,8 +36,9 @@
       transition: all 0.3s ease;
 
       .cancel-btn{
+        @apply flex justify-center;
         svg{
-          @apply fill-current text-white block h-24 w-24;
+          @apply fill-current text-white block h-16 w-16;
         }
       }
 
@@ -47,7 +48,7 @@
 
       li {
         a {
-          @apply block text-white text-lg font-medium no-underline transition-all duration-300 ease-out p-6;
+          @apply block text-white text-2xl font-medium no-underline transition-all duration-300 ease-out p-6;
           &:hover {
             @apply text-yellow-700;
           }
