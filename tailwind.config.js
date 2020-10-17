@@ -1,20 +1,5 @@
-// module.exports = {
-//   future: {
-//     // removeDeprecatedGapUtilities: true,
-//     // purgeLayersByDefault: true,
-//     // defaultLineHeights: true,
-//     // standardFontWeights: true
-//   },
-//   purge: [],
-//   theme: {
-//     extend: {}
-//   },
-//   variants: {},
-//   plugins: []
-// }
-
 module.exports = {
-  purge: ["./src/**/*.svelte"],
+  purge: ['./src/**/*.svelte', './src/**/*.html'],
   variants: {},
   theme: {
     extend: {},

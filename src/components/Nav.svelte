@@ -3,9 +3,7 @@
   import companyLogo from "../../static/logo.jpg";
 </script>
 
-<!-- <style lang="scss" global>
-  @import "../style/nav.scss";
-</style> -->
+<style lang="scss" src="../style/nav.scss" global></style>
 
 <nav>
   <ul>
