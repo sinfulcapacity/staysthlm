@@ -2,7 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+footer{
+    @apply bg-gray-300;
+    h3{
+        @apply p-20 text-center;
+    }
+}
+
+.hero {
+    img {
+        @apply max-w-full w-screen;
+        max-height: 50vh;
+    }
+}
+
+.feather {
+    width: 24px;
+    height: 24px;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+}
+
+h2 {
+    @apply text-2xl font-semibold;
+}
+
+a{
+
+    &:hover, &:active{
+        @apply text-yellow-700;
+    }
 }

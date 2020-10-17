@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "compression": "^1.7.4",
+    "feather-icons": "^4.28.0",
     "polka": "0.5.2",
     "postcss-custom-properties": "^10.0.0",
     "sirv": "^1.0.6",

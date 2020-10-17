@@ -5,13 +5,11 @@
 
 <style lang="scss" src="../style/nav.scss" global></style>
 
-<nav>
+<nav class="container">
+  <img class="logo" alt="StaySthlm" src={companyLogo} />
   <ul>
-    <li><img class="logo" alt="StaySthlm" src={companyLogo} /></li>
     <li>
-      <a
-        aria-current={segment === undefined ? 'page' : undefined}
-        href=".">home</a>
+      <a aria-current={segment === undefined ? 'page' : undefined} href=".">home</a>
     </li>
     <li>
       <a

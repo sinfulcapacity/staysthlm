@@ -1,13 +1,13 @@
 nav {
-  border-bottom: 4px solid rgba(255, 62, 0, 0.1);
-  font-weight: 300;
-  padding: 0 1em;
+  @apply grid grid-flow-col auto-cols-max gap-4 justify-between items-center sticky mx-auto pt-4 pb-4;
+
+  .logo{
+    @apply h-12;
+  }
 
   ul {
-    margin: 0;
-    padding: 0;
-
-    /* clearfix */
+    @apply flex justify-self-end;
+    
     &::after {
       content: "";
       display: block;
@@ -15,8 +15,6 @@ nav {
     }
 
     li {
-      display: block;
-      float: left;
 
       [aria-current] {
         position: relative;
@@ -37,10 +35,6 @@ nav {
         text-decoration: none;
         padding: 1em 0.5em;
         display: block;
-      }
-
-      .logo {
-        max-height: 50px;
       }
     }
   }

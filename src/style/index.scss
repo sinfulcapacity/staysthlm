@@ -1,0 +1,43 @@
+.feature {
+    margin: 0 auto;
+    @apply grid grid-flow-col auto-cols-fr col-span-3 gap-4 bg-white w-4/5 mt-16 mb-16;
+
+    a {
+        @apply p-6 bg-gray-400 text-center flex flex-col justify-between items-center;
+
+        svg {
+            @apply stroke-current text-yellow-700 inline-block h-12 w-12;
+        }
+
+        h2 {
+            @apply p-4;
+        }
+
+        &:hover {
+            @apply bg-yellow-700;
+
+            svg,
+            h2,
+            div {
+                @apply text-white;
+            }
+        }
+    }
+}
+
+.information {
+    @apply p-8 bg-gray-400;
+
+    .container {
+        margin: 0 auto;
+        @apply grid grid-flow-col auto-cols-fr col-span-2 gap-8  mt-8 mb-8;
+
+        p{
+          @apply pt-4 pb-4;
+        }
+        
+        q{
+          @apply p-4 text-xl text-center block;
+        }
+    }
+}
