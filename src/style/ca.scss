@@ -4,12 +4,6 @@
     .nr-box{
         @apply bg-gray-200 p-20;
     }
-
-    .info{
-        .col-2-container{
-
-        }
-    }
 }
 
 .feature {
@@ -20,7 +14,7 @@
         margin: 0 auto;
         @apply grid grid-flow-col auto-cols-fr col-span-3 gap-4 grid-rows-2 w-4/5;
         div {
-            @apply p-6 text-center flex flex-col justify-start- items-center;
+            @apply p-6 text-center flex flex-col items-center;
 
             svg {
                 @apply stroke-current text-yellow-700 inline-block h-12 w-12;

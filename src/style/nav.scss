@@ -1,41 +1,89 @@
-nav {
-  @apply grid grid-flow-col auto-cols-max gap-4 justify-between items-center sticky mx-auto pt-4 pb-4;
+.navbar {
+  @apply relative w-full z-10 py-6 transition-all duration-300 ease-out;
 
-  .logo{
-    @apply h-12;
+  .sticky {
+    @apply bg-white p-2 shadow-md;
+    // box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
   }
 
-  ul {
-    @apply flex justify-self-end;
-    
-    &::after {
-      content: "";
-      display: block;
-      clear: both;
+  .content {
+    @apply flex items-center justify-between;
+    margin: 0 auto;
+    width: 90%;
+
+    .logo {
+      a {
+        @apply no-underline;
+        img {
+          height: 40px;
+        }
+      }
     }
 
-    li {
+    .menu-list {
+      @apply hidden;
 
-      [aria-current] {
-        position: relative;
-        display: inline-block;
+      position: fixed;
+      height: 100vh;
+      width: 100%;
+      max-width: 400px;
+      left: -100%;
+      top: 0px;
+      display: block;
+      padding: 40px 0;
+      text-align: center;
+      background: #222;
+      transition: all 0.3s ease;
+
+      .cancel-btn{
+        svg{
+          @apply fill-current text-white block h-24 w-24;
+        }
       }
 
-      [aria-current]::after {
-        position: absolute;
-        content: "";
-        width: calc(100% - 1em);
-        height: 2px;
-        background-color: rgb(255, 62, 0);
-        display: block;
-        bottom: -1px;
+      &.show {
+        left: 0%;
       }
 
-      a {
-        text-decoration: none;
-        padding: 1em 0.5em;
-        display: block;
+      li {
+        a {
+          @apply block text-white text-lg font-medium no-underline transition-all duration-300 ease-out p-6;
+          &:hover {
+            @apply text-yellow-700;
+          }
+        }
       }
+    }
+
+    /* Small (sm) */
+    @media (min-width: 640px) {
+    }
+
+    /* Medium (md) */
+    @media (min-width: 768px) {
+      .cancel-btn,
+      .menu-btn {
+        @apply hidden;
+      }
+
+      .menu-list {
+        @apply inline-flex;
+        li {
+          a {
+            @apply text-black;
+          }
+        }
+      }
+    }
+
+    /* Large (lg) */
+    @media (min-width: 1024px) {
+      /* ... */
+    }
+
+    /* Extra Large (xl) */
+    @media (min-width: 1280px) {
+      /* ... */
     }
   }
 }

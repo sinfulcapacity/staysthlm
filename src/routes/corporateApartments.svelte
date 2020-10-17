@@ -8,7 +8,7 @@
 	<title>Corporate Apartments</title>
 </svelte:head>
 
-<div class="hero"><img src="https://www.vasbyhem.se/Global/DisplayMultimedia.ashx?guid=11301547-7886-4aac-9f10-b7fd7f875cce" alt="" /></div>
+<div class="banner"></div>
 
 <div class="information container">
 	<div class="nr-box">

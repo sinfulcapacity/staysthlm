@@ -3,8 +3,10 @@ module.exports = {
   variants: {},
   theme: {
     fontFamily: {
-      display: ['Inter', 'sans-serif'],
-      body: ['Inter', 'sans-serif'],
+      // display: ['Inter', 'sans-serif'],
+      // body: ['Inter', 'sans-serif'],
+      'display': ['Poppins', 'sans-serif'],
+      'body': ['Poppins', 'sans-serif']
     },
     extend: {},
   },

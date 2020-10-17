@@ -8,7 +8,7 @@
     <title>StaySthlm.com</title>
 </svelte:head>
 
-<div class="hero"><img src="https://www.vasbyhem.se/Global/DisplayMultimedia.ashx?guid=11301547-7886-4aac-9f10-b7fd7f875cce" alt="" /></div>
+<div class="banner"></div>
 
 <div class="feature">
     <a href="corporateApartments">
