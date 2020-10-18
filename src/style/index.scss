@@ -1,10 +1,10 @@
 .banner{
-    background-image: url("https://www.vasbyhem.se/Global/DisplayMultimedia.ashx?guid=11301547-7886-4aac-9f10-b7fd7f875cce");
+    background-image: url("/banner1.jpg");
 }
 
 .feature {
     margin: 0 auto;
-    @apply grid grid-flow-col auto-cols-fr col-span-3 gap-4 bg-white w-4/5 mt-16 mb-16;
+    @apply grid grid-flow-row auto-rows-fr col-span-3 gap-4 bg-white w-4/5 mt-16 mb-16;
 
     a {
         @apply p-6 bg-gray-400 text-center flex flex-col justify-between items-center;
@@ -27,6 +27,11 @@
             }
         }
     }
+
+    /* Medium (md) */
+    @media (min-width: 768px) {
+        @apply grid grid-flow-col auto-cols-fr col-span-3 gap-4 bg-white w-4/5 mt-16 mb-16;
+    }
 }
 
 .information {
@@ -34,7 +39,7 @@
 
     .container {
         margin: 0 auto;
-        @apply grid grid-flow-col auto-cols-fr col-span-2 gap-8  mt-8 mb-8;
+        @apply grid grid-flow-row .auto-rows-fr col-span-2 gap-8  mt-8 mb-8;
 
         p{
           @apply pt-4 pb-4;
@@ -42,6 +47,13 @@
         
         q{
           @apply p-4 text-xl text-center block;
+        }
+    }
+
+    /* Medium (md) */
+    @media (min-width: 768px) {
+        .container {
+            @apply grid grid-flow-col auto-cols-fr col-span-2 gap-8  mt-8 mb-8;
         }
     }
 }

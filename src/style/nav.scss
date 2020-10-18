@@ -21,24 +21,16 @@
     }
 
     .menu-list {
-      @apply hidden;
+      @apply bg-gray-900 py-20 hidden text-center fixed h-screen w-screen max-w-screen-sm top-0 block;
 
-      position: fixed;
-      height: 100vh;
-      width: 100%;
-      max-width: 400px;
       left: -100%;
-      top: 0px;
-      display: block;
-      padding: 40px 0;
-      text-align: center;
-      background: #222;
+      // padding: 40px 0;
       transition: all 0.3s ease;
 
       .cancel-btn{
         @apply flex justify-center;
         svg{
-          @apply fill-current text-white block h-16 w-16;
+          @apply fill-current text-white block h-12 w-12;
         }
       }
 
@@ -68,10 +60,12 @@
       }
 
       .menu-list {
-        @apply inline-flex;
+        @apply bg-transparent py-0 text-center relative h-auto w-auto max-w-none top-auto inline-flex;
+        left: 0;
+
         li {
           a {
-            @apply text-black;
+            @apply text-black text-base p-4;
           }
         }
       }

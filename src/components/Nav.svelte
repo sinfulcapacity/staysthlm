@@ -4,28 +4,19 @@
   import featherSprite from "../assets/images/icons/feather-sprite.svg";
 
   const onNavHideMobileMenu = () => {
-    // const body = document.querySelector("body");
-    // const navbar = document.querySelector(".navbar");
-    // const menuBtn = document.querySelector(".menu-btn");
-    // body.classList.remove("disabled");
-    // navbar.classList.remove("hidden");
-    //menuBtn.classList.remove("hidden");
-
+    const body = document.querySelector("body");
     const menuList = document.querySelector(".menu-list");
+
+    body.classList.remove("disabled");
     menuList.classList.remove("show");
   };
 
   const onNavShowMobileMenu = () => {
     const body = document.querySelector("body");
-    const navbar = document.querySelector(".navbar");
-    const menuBtn = document.querySelector(".menu-btn");
-
     const menuList = document.querySelector(".menu-list");
-    menuList.classList.add("show");
 
-    //navbar.classList.add("active");
-    //menuBtn.classList.add("hidden");
-    //body.classList.add("disabled");
+    body.classList.remove("disabled");
+    menuList.classList.add("show");
   };
 </script>
 
@@ -46,27 +37,27 @@
       <li>
         <a
           aria-current={segment === undefined ? 'page' : undefined}
-          href=".">Home</a>
+          href="." on:click={onNavHideMobileMenu}>Home</a>
       </li>
       <li>
         <a
           aria-current={segment === 'corporateApartments' ? 'page' : undefined}
-          href="corporateApartments">Corporate apartments</a>
+          href="corporateApartments" on:click={onNavHideMobileMenu}>Corporate apartments</a>
       </li>
       <li>
         <a
           aria-current={segment === 'stayplus' ? 'page' : undefined}
-          href="stayplus">Stay plus</a>
+          href="stayplus" on:click={onNavHideMobileMenu}>Stay plus</a>
       </li>
       <li>
         <a
           aria-current={segment === 'ourteam' ? 'page' : undefined}
-          href="ourteam">Our team</a>
+          href="ourteam" on:click={onNavHideMobileMenu}>Our team</a>
       </li>
       <li>
         <a
           aria-current={segment === 'contact' ? 'page' : undefined}
-          href="contact">Contact</a>
+          href="contact" on:click={onNavHideMobileMenu}>Contact</a>
       </li>
     </ul>
     <div class="icon menu-btn" on:click={onNavShowMobileMenu}>

@@ -29,15 +29,12 @@ export default {
                 dev,
                 hydratable: true,
                 emitCss: true,
-                // css: css => {
-                //   css.write('bundle.css');
-                // },
                 preprocess: preprocess({
                     postcss: true,
                 }),
             }),
             url({
-                sourceDir: path.resolve(__dirname, "src/assets/images"),
+                sourceDir: path.resolve(__dirname, "src/assets/"),
                 publicPath: "/client/",
             }),
             resolve({
@@ -103,7 +100,7 @@ export default {
                 }),
             }),
             url({
-                sourceDir: path.resolve(__dirname, "src/assets/images"),
+                sourceDir: path.resolve(__dirname, "src/assets/"),
                 publicPath: "/client/",
                 emitFiles: false, // already emitted by client build
             }),
