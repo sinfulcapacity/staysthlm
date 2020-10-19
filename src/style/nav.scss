@@ -20,22 +20,35 @@
       }
     }
 
+    .menu-btn {
+      cursor: pointer;
+      &:hover,
+      &:active {
+        @apply text-yellow-700 transition-all duration-100 ease-linear;
+      }
+    }
+
     .menu-list {
-      @apply bg-gray-900 py-20 hidden text-center fixed h-screen w-screen max-w-screen-sm top-0 block;
-
+      @apply bg-black py-20 block text-center fixed h-screen w-screen max-w-screen-sm top-0;
       left: -100%;
-      // padding: 40px 0;
-      transition: all 0.3s ease;
+      visibility: hidden;
 
-      .cancel-btn{
+      .cancel-btn {
         @apply flex justify-center;
-        svg{
+        cursor: pointer;
+        svg {
           @apply fill-current text-white block h-12 w-12;
+        }
+        &:hover,
+        &:active {
+          @apply text-yellow-700 transition-all duration-100 ease-linear;
         }
       }
 
       &.show {
         left: 0%;
+        visibility: visible;
+        @apply transition-all duration-300 ease-out;
       }
 
       li {
@@ -48,10 +61,6 @@
       }
     }
 
-    /* Small (sm) */
-    @media (min-width: 640px) {
-    }
-
     /* Medium (md) */
     @media (min-width: 768px) {
       .cancel-btn,
@@ -60,7 +69,8 @@
       }
 
       .menu-list {
-        @apply bg-transparent py-0 text-center relative h-auto w-auto max-w-none top-auto inline-flex;
+        @apply bg-transparent py-0 text-center relative h-auto w-auto max-w-none top-auto inline-flex opacity-100;
+        visibility: visible;
         left: 0;
 
         li {
@@ -69,16 +79,6 @@
           }
         }
       }
-    }
-
-    /* Large (lg) */
-    @media (min-width: 1024px) {
-      /* ... */
-    }
-
-    /* Extra Large (xl) */
-    @media (min-width: 1280px) {
-      /* ... */
     }
   }
 }

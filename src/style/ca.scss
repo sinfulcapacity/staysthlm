@@ -1,16 +1,33 @@
-.banner{
-    background-image: url("/banner1.jpg");
+
+.ca-banner{
+    background-image: url("/client/images/Livingroom_grey-scaled.jpeg") !important;
+    background-position: right 33% bottom 0 !important;
+    background-size: cover !important;
+    height: 50vh !important;
+    @apply flex justify-center items-center;
+
+    /* Medium (md) */
+    @media (min-width: 768px) {
+        height: 25vh !important;
+        background-position: right top !important;
+        background-size: contain !important;
+        background-attachment: fixed !important;
+    }
 }
 
-.information {
+.ca-information {
     @apply bg-white py-16;
 
     .content{
         width: 90%;
         margin: 0 auto;
         .nr-box {
-            @apply bg-gray-200 p-10 w-full flex justify-center flex-col flex-no-wrap flex-auto text-center;
+            @apply bg-gray-200 p-10 w-full flex justify-center flex-col flex-no-wrap flex-auto text-center rounded;
             margin: 0 auto 2rem;
+
+            h2{
+                @apply text-4xl mb-2 text-yellow-700;
+            }
         }
 
         .info{
@@ -41,29 +58,37 @@
     }
 }
 
-.feature {
+.ca-feature {
     margin: 0 auto;
     @apply w-full bg-gray-300 pt-20 pb-20;
 
     div {
+        @apply grid grid-rows-6;
+        width: 90%;
         margin: 0 auto;
-        @apply grid grid-flow-col auto-cols-fr col-span-1 gap-4 grid-rows-6 w-4/5;
+
         div {
-            @apply p-6 text-center flex flex-col items-center;
+            @apply py-4 text-center flex flex-col items-center;
 
             svg {
                 @apply stroke-current text-yellow-700 inline-block h-12 w-12;
             }
 
             h2 {
-                @apply p-4;
+                @apply py-4;
             }
         }
     }
     /* Medium (md) */
     @media (min-width: 768px) {
         div{
-            @apply grid grid-flow-col auto-cols-fr col-span-3 gap-4 grid-rows-2 w-4/5;
+            @apply grid grid-flow-col auto-cols-fr col-span-3 gap-4 grid-rows-2;
+            width: 90%;
+            margin: 0 auto;
+
+            h2 {
+                min-height: 100px;
+            }
         }
     }
 }

@@ -5,12 +5,12 @@
 <style lang="scss" src="../style/index.scss" global></style>
 
 <svelte:head>
-    <title>StaySthlm.com</title>
+    <title>StaySthlm - Corporate apartments made easy!</title>
 </svelte:head>
 
-<div class="banner"></div>
+<div class="banner ibanner">
 
-<div class="feature">
+<div class="feature home-feature">
     <a href="corporateApartments">
         <svg class="feather">
             <use xlink:href="{featherSprite}#home" />
@@ -29,6 +29,8 @@
         </svg>
         <h2>Contact us</h2>
     </a>
+</div>
+
 </div>
 
 <div class="information">

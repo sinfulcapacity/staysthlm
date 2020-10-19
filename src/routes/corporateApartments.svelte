@@ -21,12 +21,17 @@
 </style>
 
 <svelte:head>
-    <title>Corporate Apartments</title>
+    <title>StaySthlm - Corporate Apartments</title>
 </svelte:head>
 
-<div class="banner" />
+<div class="banner ca-banner">
+    <div class="hilight">
+        <h2>Corporate apartments</h2>
+        Corporate housing made easy!
+    </div>
+</div>
 
-<div class="information">
+<div class="ca-information">
     <div class="content">
         <div class="nr-box">
             <h2>{totalNr}</h2>
@@ -52,7 +57,7 @@
     </div>
 </div>
 
-<div class="feature">
+<div class="ca-feature">
     <div class="container">
         <div>
             <svg class="feather">

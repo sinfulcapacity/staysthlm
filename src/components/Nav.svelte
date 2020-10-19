@@ -1,6 +1,5 @@
 <script>
   export let segment;
-  import companyLogo from "../../static/logo.jpg";
   import featherSprite from "../assets/images/icons/feather-sprite.svg";
 
   const onNavHideMobileMenu = () => {
@@ -26,7 +25,7 @@
 <nav class="navbar">
   <div class="content">
     <div class="logo">
-      <a href="/"><img alt="StaySthlm" src={companyLogo} /></a>
+      <a href="/"><img alt="StaySthlm" src="/client/images/StaySthlm-Top-Logo.png" /></a>
     </div>
     <ul class="menu-list">
       <div class="icon cancel-btn" on:click={onNavHideMobileMenu}>
@@ -48,11 +47,6 @@
         <a
           aria-current={segment === 'stayplus' ? 'page' : undefined}
           href="stayplus" on:click={onNavHideMobileMenu}>Stay plus</a>
-      </li>
-      <li>
-        <a
-          aria-current={segment === 'ourteam' ? 'page' : undefined}
-          href="ourteam" on:click={onNavHideMobileMenu}>Our team</a>
       </li>
       <li>
         <a

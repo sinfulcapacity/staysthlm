@@ -1,13 +1,20 @@
-.banner{
-    background-image: url("/banner1.jpg");
+.ibanner{
+    background-image: url("/client/images/Livingroom_white.jpeg") !important;
+    @apply flex flex-col justify-center bg-center bg-scroll;
+    height: 100% !important;
+
+    /* Medium (md) */
+    @media (min-width: 768px) {
+        height: 50vh !important;
+    }
 }
 
-.feature {
+.home-feature {
     margin: 0 auto;
-    @apply grid grid-flow-row auto-rows-fr col-span-3 gap-4 bg-white w-4/5 mt-16 mb-16;
+    @apply grid grid-flow-row auto-rows-fr col-span-3 gap-4 w-4/5 mt-16 mb-16;
 
     a {
-        @apply p-6 bg-gray-400 text-center flex flex-col justify-between items-center;
+        @apply p-6 bg-gray-400 text-center flex flex-col justify-between items-center bg-opacity-50 rounded;
 
         svg {
             @apply stroke-current text-yellow-700 inline-block h-12 w-12;
@@ -30,7 +37,7 @@
 
     /* Medium (md) */
     @media (min-width: 768px) {
-        @apply grid grid-flow-col auto-cols-fr col-span-3 gap-4 bg-white w-4/5 mt-16 mb-16;
+        @apply grid-flow-col auto-cols-fr;
     }
 }
 

@@ -30,7 +30,18 @@
 </main>
 
 <footer>
-	<h3>
-		© Copyright Stay in Sweden AB. - All Rights Reserved 2020
-	</h3>
+	<div class="content">
+        <div class="logo">
+            <img src="/client/images/Logo-StaySthlm.png" alt="StaySthlm - Corporate apartments made easy!">
+        </div>
+        <div class="content-information">
+            <ul>
+                <li><strong>Our opeing hours: </strong> 9 am to 5 pm</li>
+                <li><strong>Phone: </strong> + 46 (0) 8 410 337 80</li>
+                <li><strong>Mail: </strong> info@staysthlm.se</li>
+                <li><strong>Adress: </strong> Ranhammarsvägen 4 161 02 Bromma</li>
+                <li><strong>Org: </strong> 556811-9977 (Stay in Sweden AB)</li>
+              </ul>
+        </div>
+    </div>
 </footer>

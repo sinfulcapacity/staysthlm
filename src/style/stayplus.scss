@@ -1,0 +1,100 @@
+.sp-banner {
+  background-image: url("/client/images/coffee-cup.jpg") !important;
+  @apply flex justify-center items-center;
+  background-attachment: scroll !important;
+  height: 25vh !important;
+
+  .hilight {
+    @apply text-white;
+  }
+}
+
+.sp-feature {
+  margin: 0 auto;
+  @apply grid grid-flow-row auto-rows-fr col-span-3 gap-4 bg-white w-4/5 mt-16 mb-16;
+
+  div {
+    @apply p-6 text-center flex flex-col justify-between items-center;
+
+    svg {
+      @apply stroke-current text-yellow-700 inline-block h-12 w-12;
+    }
+
+    h2 {
+      @apply p-4;
+    }
+
+    // &:hover {
+    //     @apply bg-yellow-700;
+
+    //     svg,
+    //     h2,
+    //     div {
+    //         @apply text-white;
+    //     }
+    // }
+  }
+
+  /* Medium (md) */
+  @media (min-width: 768px) {
+    @apply grid grid-flow-col auto-cols-fr col-span-3 gap-4 bg-white w-4/5 mt-16 mb-16;
+  }
+}
+
+.sp-serviceinfo {
+  .content {
+    width: 90%;
+    margin: 0 auto;
+
+    .text-img {
+      @apply grid grid-flow-row gap-2 mb-8;
+
+      .img-box {
+        @apply text-center;
+        > img {
+          min-height: 250px;
+          max-height: 250px;
+          margin: 0 auto;
+        }
+        > div {
+          @apply pt-2 italic;
+        }
+      }
+    }
+
+    .service-info {
+      @apply grid grid-flow-row auto-rows-auto gap-2;
+      > div {
+        @apply pb-8;
+      }
+    }
+
+    @media (min-width: 768px) {
+      width: 80%;
+
+      .text-img {
+        @apply grid grid-flow-col auto-cols-fr col-span-2 gap-4 mb-0;
+
+        > .img-box {
+          > img {
+            max-height: none;
+          }
+        }
+      }
+
+      .service-info {
+        @apply grid grid-flow-col auto-cols-fr col-span-2 gap-4 grid-rows-2 my-20;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .text-img {
+        > .img-box {
+          > img {
+            // max-height: 350px;
+          }
+        }
+      }
+    }
+  }
+}

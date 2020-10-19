@@ -1,0 +1,45 @@
+.co-banner {
+  background-image: url("/client/images/plants_head.jpeg") !important;
+  @apply flex justify-center items-center;
+  background-attachment: scroll !important;
+  height: 25vh !important;
+}
+
+.co-contact {
+  .content {
+    width: 90%;
+    margin: 0 auto;
+    @apply grid grid-flow-row auto-rows-auto gap-2;
+
+    > .info{
+      @apply my-8;
+    }
+
+    > .contact-info{
+      @apply mb-8;
+      > ul{
+        > li{
+          @apply py-2 text-xl;
+
+          &:first-child{
+            @apply pt-0 pb-2;
+          }
+
+          &:last-child{
+            @apply pt-2 pb-0;
+          }
+        }
+      }
+    }
+
+    @media (min-width: 768px) {
+      width: 80%;
+      @apply grid grid-flow-col auto-cols-fr col-span-2 gap-8 my-20;
+      min-height: 30vh;
+
+      > .info, .contact-info{
+        @apply my-0;
+      }
+    }
+  }
+}
